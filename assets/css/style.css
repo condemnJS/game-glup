@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #6e686e;
+    overflow: hidden;
+}
+* {
+    font-family: 'custom';
+}
+@font-face {
+    font-family: 'custom';
+    src: url("../fonts/arcade.ttf");
+}
+.startMenu {
+    background-image: url("../img/bg.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.textMenu {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+.textMenu h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #EFE6ED;
+}
+.textMenu ul li{
+    color: #EFE6ED;
+    cursor: pointer;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.textMenu ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.textMenu ul {
+    list-style-type: none;
+}
+.textMenu ul li:hover {
+    list-style-image: url("../img/pointer.png");
+    transition: .3s;
+    transform: translateY(-5px);
+}
+.game {
+    display: none;
+    width: 100%;
+    height: 100%;
+    /*position: relative;*/
+}
+.road {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    background-image: url("../img/road.jpg");
+    background-repeat: repeat-y;
+    width: 1220px;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position-y: 10px;
+}
+.player {
+    background-image: url("../img/gifs/turtle-run.gif");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 700px;
+    left: 570px;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.enemy-robot {
+    background: url("../img/robot.png") center no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 15%;
+    width: 90px;
+    height: 90px;
+}
+.enemy-barrel {
+    background: url("../img/gifs/barrel.png") center no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 15%;
+    width: 80px;
+    height: 50px;
+}
+.enemy-coin {
+    background: url("../img/gifs/coin.gif") center no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 15%;
+    width: 50px;
+    height: 50px;
+}
+.panel {
+    position: absolute;
+    top: 100px;
+    right: 165px;
+}
+.panel h3 {
+    color: #EFE6ED;
+    font-weight: 500;
+}
+.game-over {
+    width: 100%;
+    height: 100vh;
+    background-color: lightslategrey;
+}
+.game-over > div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game-over h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: red;
+}
+.game-over a:hover {
+    background-color: #6e686e;
+}
+.game-over a {
+    text-decoration: none;
+    font-size: 30px;
+    border: 1px solid #EFE6ED;
+    color: #EFE6ED;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.game-over a:not(:last-child){
+    margin-right: 50px;
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="startMenu" style="background-position-x: 0">
+    <div class="textMenu">
+        <h1>BARREL RUN</h1>
+        <ul>
+            <li id="startGame">Start Game</li>
+            <li>Settings</li>
+            <li>Exit</li>
+        </ul>
+    </div>
+</div>
+<div class="game">
+    <div class="road" style="background-position-y: 0">
+        <div class="player"></div>
+    </div>
+    <div class="panel">
+        <div class="hp-control">
+            <h3>HP - X <b id="counter-hp"></b></h3>
+        </div>
+        <div class="score-control">
+            <h3>SCORE - X <b id="counter-score"></b></h3>
+        </div>
+    </div>
+</div>
+<div class="game-over">
+    <div>
+        <h1>GAME OVER</h1>
+        <div>
+            <a id="goMenu">MENU</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
